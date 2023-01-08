@@ -5,6 +5,8 @@ from appium.options.android import UiAutomator2Options
 
 from common import utils
 
+from multiprocessing import Pool
+
 
 class IOSDriver:
     """
@@ -51,6 +53,18 @@ class AndroidDriver:
 
         return driver
 
+def excetue(type, is_excetue):
+    if(type == 1):
+        ios_driver = IOSDriver()
+        ios_driver.get_driver()
+    else:
+        android_driver = AndroidDriver()
+        android_driver.get_driver()
+
 if __name__ == '__main__':
-    android_driver = AndroidDriver()
-    android_driver.get_driver()
+    # android_driver = AndroidDriver()
+    # android_driver.get_driver()
+    pool = Pool(1)
+    types = [[1, True], [2, True]]
+    for type in types:
+        pool.apply(excetue, (type[0], type[1]))
