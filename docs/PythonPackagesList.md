@@ -17,6 +17,8 @@
   - 简介：一个扩展库，用于将WebDriver协议和Appium命令添加到Selenium Python语言绑定中，以便与移动测试框架Appium一起使用。
   - pypi地址：https://pypi.org/project/Appium-Python-Client/
   - github地址：https://github.com/appium/python-client
-- pyaml 21.10.1
-  - 简介：基于pyyaml的python模块来生成漂亮且可读的yaml序列化数据。
-  - pypi地址：https://pypi.org/project/pyaml/
+- PyYAML 6.0
+  - 简介：YAML是一种数据序列化格式，设计用于人类的可读性和与脚本语言的交互。PyYAML是Python的YAML解析器和发射器。
+  - pypi地址：https://pypi.org/project/PyYAML/
+  - github地址：https://github.com/yaml/pyyaml
+  - 官网地址：https://pyyaml.org/
