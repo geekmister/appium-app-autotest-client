@@ -11,3 +11,4 @@ requests-toolbelt==0.8.0
 wrapcache==1.0.8
 termcolor==2.1.1
 PyYAML==6.0
+tidevice==0.9.12

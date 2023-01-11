@@ -22,3 +22,7 @@
   - pypi地址：https://pypi.org/project/PyYAML/
   - github地址：https://github.com/yaml/pyyaml
   - 官网地址：https://pyyaml.org/
+- tidevice 0.9.12
+  - 简介：该工具能够用于与iOS设备进行通信
+  - pypi地址：https://pypi.org/project/tidevice/
+  - github地址：https://github.com/alibaba/taobao-iphone-device
