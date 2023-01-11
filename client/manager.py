@@ -3,8 +3,6 @@ from appium import webdriver
 from appium.options.ios import XCUITestOptions
 from appium.options.android import UiAutomator2Options
 
-from common import utils
-
 from multiprocessing import Pool
 
 
@@ -50,7 +48,6 @@ class AndroidDriver:
         options.udid = 'b96ba9fe'
 
         driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', options=options)
-        ### ceshi
 
         return driver
 

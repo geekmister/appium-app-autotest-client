@@ -1,6 +1,5 @@
 beautifulsoup4==4.5.3
 bs4==0.0.1
-PyYAML==3.12
 six==1.10.0
 requests==2.18.4
 selenium==4.7.2
@@ -11,3 +10,4 @@ xlsxwriter==1.0.4
 requests-toolbelt==0.8.0
 wrapcache==1.0.8
 termcolor==2.1.1
+PyYAML==6.0

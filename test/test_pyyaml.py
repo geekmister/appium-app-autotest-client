@@ -1,7 +1,5 @@
 import yaml
 
-from common import utils
-
 
 def load_yaml(stream):
 
