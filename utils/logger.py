@@ -1,31 +1,26 @@
 from termcolor import colored
 
 
-@staticmethod
 def verbose(msg):
     # 打印verbose日志
     TermWarpper.warpper_white(msg)
 
 
-@staticmethod
 def debug(msg):
     # 打印debug日志
     TermWarpper.warpper_blue(msg)
 
 
-@staticmethod
 def info(msg):
     # 打印info日志
     TermWarpper.warpper_green(msg)
 
 
-@staticmethod
 def warn(msg):
     # 打印warn日志
     TermWarpper.warpper_yellow(msg)
 
 
-@staticmethod
 def error(msg):
     # 打印error日志
     TermWarpper.warpper_red(msg)
