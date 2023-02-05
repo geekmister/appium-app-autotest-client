@@ -8,5 +8,5 @@ def load_yaml(stream):
 
 
 if __name__ == "__main__":
-    yaml_stream = open("../TestCaseRepository/TestYaml.yaml", "r")
+    yaml_stream = open("../resources/TestCaseRepository/TestYaml.yaml", "r")
     load_yaml(yaml_stream)

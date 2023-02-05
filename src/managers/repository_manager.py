@@ -39,4 +39,4 @@ def tc_repo_iterator(path="../TestCaseRepository"):
 
 
 if __name__ == "__mian__":
-    tc_repo_iterator("../TestCaseRepository");
+    tc_repo_iterator("../../resources/TestCaseRepository");
