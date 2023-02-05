@@ -8,8 +8,10 @@ Features
 
 
 import os;
+import sys;
 
-from 
+sys.path.append('/Users/geekchief/Desktop/Work/Github repositories for geekmister/appium-app-autotest/appium-app-autotest-client/appium-app-autotest-client.git/src/utils/logger.py');
+from utils import logger
 
 
 def app_repo_iterator(path="../AppRepository"):
@@ -30,10 +32,11 @@ def tc_repo_iterator(path="../TestCaseRepository"):
 
     structure = os.walk(top=path, topdown=True, onerror=None, followlinks=False);
     for root, dirs, files in structure:
+        print(root)
         logger.debug(root);
         logger.debug(dirs);
         logger.debug(files);
 
 
 if __name__ == "__mian__":
-    tc_repo_iterator();
+    tc_repo_iterator("../TestCaseRepository");
