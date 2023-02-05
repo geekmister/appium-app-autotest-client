@@ -12,7 +12,16 @@
 
 ## 反馈
 
-## 相关项目
+## 感谢
+
+在此项目编码过程中使用到文档，包括：Python官方API文档、和其他第三方文档，将记录在此，表示感谢 :pray:
+
+- [Python 3.7.14 Language Reference](https://docs.python.org/zh-cn/3.7/reference/index.html) :point_left: Python 3.7.14 语言参考
+- [Python 3.7.14 Library Reference](https://docs.python.org/zh-cn/3.7/library/index.html) :point_left: Python 3.7.14 内置库参考
+
+# FAQ
+
+1. 此项目编码过程中使用的是MacOS系统，程序中可能会出现一些操作系统兼容的问题，比如：路径问题，可以通过提交issue反馈给我进行修复。
 
 ## 许可
 
