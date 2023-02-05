@@ -1,28 +1,43 @@
+"""
+The module created by Geemkmister, at 2023-02-05 PM 15:32
+
+This is a tool that real-time print and record logs.
+
+Features:
+1. class TermWarpper is styled terminal out text, you can custom color or extend by termcolor.
+2. class Recorder is write temporary to local file.(todo)
+3. function verbose(msg) is print to terminal window verbose log with white color.
+4. function debug(msg) is print to terminal window debug log with blue color.
+5. function info(msg) is print to terminal window debug log with green color.
+6. function warn(msg) is print to terminal window warn log with yellow color.
+7. function error(msg) is print to terminal window error log with red color.
+"""
+
 from termcolor import colored
 
 
 def verbose(msg):
-    # 打印verbose日志
+    # print verbose log
     TermWarpper.warpper_white(msg)
 
 
 def debug(msg):
-    # 打印debug日志
+    # print debug log
     TermWarpper.warpper_blue(msg)
 
 
 def info(msg):
-    # 打印info日志
+    # print info log
     TermWarpper.warpper_green(msg)
 
 
 def warn(msg):
-    # 打印warn日志
+    # print warn log
     TermWarpper.warpper_yellow(msg)
 
 
 def error(msg):
-    # 打印error日志
+    # print error log
     TermWarpper.warpper_red(msg)
 
 

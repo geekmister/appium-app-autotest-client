@@ -1,3 +1,15 @@
+# The module created by Geemkmister, at 2023-02-05 PM 14:50
+# 
+# Device manage module (saw Device manager)
+#
+# Fetures (contains two parts, iOS and Android)
+# 
+# iOS:
+# 1. read connected device list
+# 
+# Android:
+# 1. read connected device list
+
 import subprocess
 
 from utils import logger
