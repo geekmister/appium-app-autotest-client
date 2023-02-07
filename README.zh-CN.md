@@ -16,8 +16,9 @@
 
 在此项目编码过程中使用到文档，包括：Python官方API文档、和其他第三方文档，将记录在此，表示感谢 :pray:
 
-- [Python 3.7.14 Language Reference](https://docs.python.org/zh-cn/3.7/reference/index.html) :point_left: Python 3.7.14 语言参考
-- [Python 3.7.14 Library Reference](https://docs.python.org/zh-cn/3.7/library/index.html) :point_left: Python 3.7.14 内置库参考
+- [Python 3.9.4 Language Reference](https://docs.python.org/zh-cn/3.9/reference/index.html) Python 3.7.14 语言参考
+- [Python 3.9.4 Library Reference](https://docs.python.org/zh-cn/3.9/library/index.html) Python 3.7.14 内置库参考
+- [Pyhton 3.9.4 Quick Tutorial](https://docs.python.org/zh-cn/3.9/tutorial/index.html) Python 3.9.4 快速入门
 
 # FAQ
 

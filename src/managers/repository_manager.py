@@ -1,42 +1,58 @@
 """
 Created by Geemkmister, at 2023-02-05 PM 16:19
 
-The module is manage AppRepository and TestCaseRepository and custom define it path.
+The module is manage AppRepository and TestCaseRepository and custom it path.
 
-Features
+Features:
+    1. get_tc_repo_books get test case repository books
 """
 
 
-import os;
-import sys;
+import os
 
-sys.path.append('/Users/geekchief/Desktop/Work/Github repositories for geekmister/appium-app-autotest/appium-app-autotest-client/appium-app-autotest-client.git/src/utils/logger.py');
 from utils import logger
 
 
 def app_repo_iterator(path="../AppRepository"):
     """
     Desc: iterable app repository, default ../AppRepository
-    Params: 
+    Params:
         path | app repository root path
     """
     pass
 
 
-def tc_repo_iterator(path="../TestCaseRepository"):
+def get_tc_repo_books(path):
     """
-    Desc: iterable test case repository, default ../TestCaseRepository
+    Desc:
+        1. get test case repository books
     Params:
         path | test case repository root path
+    Todo:
+        1. need add error judgment
     """
 
-    structure = os.walk(top=path, topdown=True, onerror=None, followlinks=False);
-    for root, dirs, files in structure:
-        print(root)
-        logger.debug(root);
-        logger.debug(dirs);
-        logger.debug(files);
+    if path == "":
+        logger.error("The input path is not null")
+        return None
+
+    # test case repository books
+    books = {"root": path, "readme": "", "childs": []}
+
+    tree = os.walk(top=path, topdown=True, onerror=None, followlinks=False)
+    for root, dirs, files in tree:
+        if root == path:
+            books["readme"] = os.path.join(root, "readme.yaml")
+            for item in dirs:
+                books["childs"].append(item)
+        else:
+            child = root[root.rfind("/") + 1:]
+            books[child] = []
+            for item in files:
+                books[child].append(os.path.join(root, item))
+
+    return books
 
 
-if __name__ == "__mian__":
-    tc_repo_iterator("../../resources/TestCaseRepository");
+if __name__ == "__main__":
+    pass
