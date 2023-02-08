@@ -1,0 +1,4 @@
+Appium-Python-Client==2.7.1
+termcolor==2.1.1
+PyYAML==6.0
+tidevice==0.9.12

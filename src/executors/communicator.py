@@ -1,3 +1,9 @@
+"""
+The module created by Geemkmister, at 2023-02-05 PM 15:37.
+
+This is an appium server communicator.
+"""
+
 from appium import webdriver
 
 from appium.options.ios import XCUITestOptions
