@@ -1,3 +1,0 @@
-"""
-Worker space manager
-"""

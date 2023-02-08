@@ -5,7 +5,7 @@ The project lanuch file.
 """
 
 
-from managers import parser_manager, device, repository
+from managers import parser, device, repository
 from utils import logger
 
 
