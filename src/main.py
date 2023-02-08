@@ -5,16 +5,23 @@ The project lanuch file.
 """
 
 
-from managers import parser_manager
+from managers import parser_manager, device, repository
 from utils import logger
 
-def run():
-    # fetch device list
-    # get test case repository books
-    # allocation workspace
-    pass
 
-if __name__ == "__main__":
+def run():
+    # parser command
     parser = parser_manager.get_parser()
     args = parser.parse_args()
-    logger.debug(args.path)
+
+    # fetch device list
+    devices = device.package_devices()
+
+    # get test case repository books
+    books = repository.get_tc_repo_books(args.path)
+
+    # allocation workspace
+
+
+if __name__ == "__main__":
+    run()
